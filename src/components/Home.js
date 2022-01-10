@@ -14,9 +14,9 @@ const firestore = getFirestore(firebaseApp);
 const Home = ({ correoUsuario }) => {
   const [arrayTareas, setArrayTareas] = useState(null);
   const fakeData = [
-    { id: 1, descripcion: "tarea falsa 1", url: "https://picsum.photos/420" },
-    { id: 2, descripcion: "tarea falsa 2", url: "https://picsum.photos/420" },
-    { id: 3, descripcion: "tarea falsa 3", url: "https://picsum.photos/420" },
+    { id: 1, descripcion: "Tarea 1", url: "https://picsum.photos/420" },
+    { id: 2, descripcion: "Tarea 2", url: "https://picsum.photos/420" },
+    { id: 3, descripcion: "Tarea 3", url: "https://picsum.photos/420" },
   ];
 
   async function buscarDocumentOrCrearDocumento(idDocumento) {
@@ -51,7 +51,7 @@ const Home = ({ correoUsuario }) => {
 
   return (
     <Container>
-      <h4>hola, sesión iniciada</h4>
+      <h4>Hola, sesión iniciada</h4>
       <Button onClick={() => signOut(auth)}>Cerrar sesión</Button>
       <hr />
       <AgregarTarea

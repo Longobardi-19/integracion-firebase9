@@ -47,7 +47,7 @@ const ArgegarTarea = ({ correoUsuario, setArrayTareas, arrayTareas }) => {
           <Col>
             <Form.Control
               type="text"
-              placeholder="Describe tu tarea"
+              placeholder="Descripción de tarea"
               id="formDescripcion"
             />
           </Col>
